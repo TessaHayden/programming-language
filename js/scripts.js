@@ -3,19 +3,27 @@ window.onload = function () {
   let form = document.querySelector("form");
   let resetBtn = document.querySelector("button#reset");
   let answers = document.querySelector("div#answerDiv");
-  //variables for possible answers
-  let ruby = document.getElementById("aRuby");
-  let cSharp = document.getElementById("aCSharp");
-  let jScript = document.getElementById("aJavascript");
-  let python = document.getElementById("aPython");
+  // //variables for possible answers
+  // let ruby = document.getElementById("aRuby");
+  // let cSharp = document.getElementById("aCSharp");
+  // let jScript = document.getElementById("aJavascript");
+  // let python = document.getElementById("aPython");
   //varibles for input answers
-  let q1 = document.getElementById("q1puppies").value;
-    
+  let q1 = parseInt(document.getElementById("q1puppies").value);
 
-  form.addEventListener("submit", function (event) {
+  form.onsubmit = function (event) {
     event.preventDefault();
-    console.log(q1);
-  });
+    //variables for possible answers
+    let ruby = document.querySelector("aRuby");
+    ruby.setAttribute("class", "hidden");
+    let cSharp = document.getElementById("aCSharp");
+    let jScript = document.getElementById("aJavascript");
+    let python = document.getElementById("aPython");
+
+    if (q1 = 1) {
+      ruby.removeAttribute("class");
+    }
+  }
 
   form.addEventListener("submit", function () {
     resetBtn.removeAttribute("class");

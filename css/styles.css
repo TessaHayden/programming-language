@@ -28,6 +28,11 @@ form button {
     display: block;
     margin: auto;
 }
+
+.emphasis {
+    color: red;
+}
+
 .hidden {
     display: none;
 }
