@@ -1,42 +1,34 @@
 window.onload = function () {
-    let form = document.querySelector("form");
-    let resetBtn = document.querySelector("button#reset");
-    let answers = document.querySelector("div#answerDiv");
-
-    const q1 = document.querySelector("input#q1puppies").innerText;
-    const q2 = document.querySelector("input#q2daffodils").innerText;
-    const q3 = document.querySelector("input#q3sneeze").innerText;
-    const q4 = document.querySelector("input#q4hives").innerText;
-    const q5 = document.querySelector("input#q5muffin").innerText;
-
-    let ruby = document.querySelector("div#aRuby");
-    let cSharp = document.getElementById("aCSharp");
-    let jScript = document.getElementById("aJavascript");
-    let python = document.getElementById("aPython");
-    let undecided = document.getElementById("undetermined");
+  //global varibles for elements
+  let form = document.querySelector("form");
+  let resetBtn = document.querySelector("button#reset");
+  let answers = document.querySelector("div#answerDiv");
+  //variables for possible answers
+  let ruby = document.getElementById("aRuby");
+  let cSharp = document.getElementById("aCSharp");
+  let jScript = document.getElementById("aJavascript");
+  let python = document.getElementById("aPython");
+  //varibles for input answers
+  let q1 = document.getElementById("q1puppies").value;
     
-    function match() {
-       console.log()
-    }
-    
-    form.addEventListener("submit", function (event) {
-        match()
-        event.preventDefault();
-    });
 
-    form.addEventListener("submit", function () {
-        reset.removeAttribute("class");
-    });
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log(q1);
+  });
 
-    resetBtn.addEventListener("click", function () {
-        answers.setAttribute("class", "hidden");
-        const q1 = document.querySelector("input#q1puppies").value = null;
-        const q2 = document.querySelector("input#q2daffodils").value = null;
-        const q3 = document.querySelector("input#q3sneeze").value = null;
-        const q4 = document.querySelector("input#q4hives").value = null;
-        const q5 = document.querySelector("input#q5muffin").value = null;
+  form.addEventListener("submit", function () {
+    resetBtn.removeAttribute("class");
+  } )
 
-        
-        resetBtn.setAttribute("class", "hidden");
-    });
-}
+  resetBtn.addEventListener("click", function () {
+    answers.setAttribute("class", "hidden");
+    const q1 = (document.querySelector("input#q1puppies").value = null);
+    const q2 = (document.querySelector("input#q2daffodils").value = null);
+    const q3 = (document.querySelector("input#q3sneeze").value = null);
+    const q4 = (document.querySelector("input#q4hives").value = null);
+    const q5 = (document.querySelector("input#q5muffin").value = null);
+
+    resetBtn.setAttribute("class", "hidden");
+  });
+};
