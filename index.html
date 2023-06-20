@@ -15,25 +15,29 @@
         </div>
         <div>
             <h3>Please answer this quick survey to find the right language for you!</h3>
-            <h4>Answer "1" for yes, "2" for no.</h4>
         </div>
         <div>
-            <form>
-                <!-- 1.) -->
-                <label for="q1puppies">Do you like puppies?</label>
-                <input id="q1puppies" type="text" name="q1puppies">
-                <!-- 2.) -->
-                <label for="q2daffodils">Do you like daffodils?</label>
-                <input id="q2daffodils" type="text" name="q2daffodils">
-                <!-- 3.) -->
-                <label for="q3sneezes">Do you sneeze at night?</label>
-                <input id="q3sneezes" type="text" name="q3sneezes">
-                <!-- 4.) -->
-                <label for="q4hives">Do you get hives?</label>
-                <input id="q4hives" type="text" name="q4hives">
-                <!-- 5.) -->
-                <label for="q5muffin">Do you know the muffin-man?</label>
-                <input id="q5muffin" type="text" name="q5muffin">
+            <form id="radio-form">
+                <label>
+                    <input type="radio" name="survey" value="puppies" checked>
+                    Do you like puppies?
+                </label>
+                <label>
+                    <input type="radio" name="survey" value="daffodils">
+                    Do you like daffodils?
+                </label>
+                <label>
+                    <input type="radio" name="survey" value="sneezes">
+                    Do you sneeze at night?
+                </label>
+                <label>
+                    <input type="radio" name="survey" value="hives">
+                    Do you ever get hives?
+                </label>
+                <label>
+                    <input type="radio" name="survey" value="muffins">
+                    Do you know the Muffin Man?
+                </label>
 
                 <button type="submit">Submit to find out!</button>
             </form>
@@ -41,26 +45,9 @@
                 <button type="button" class="hidden" id="reset">Reset Button</button>
             </div>
         </div>
-        <div id="answerDiv" class="hidden">
-            <div id="aRuby" class="hidden">
-                <!-- Ruby answer -->
-                <p>Based on the survey you filled out <span class="emphasis">Ruby</span> is the best programming language for you!</p>
-            </div>
-            <div id="aCSharp" class="hidden">
-                <!-- C# answer -->
-                <p>Based on the survey you filled out <span class="emphasis">C#</span> is the best programming language for you!</p>
-            </div>
-            <div id="aJavascript" class="hidden">
-                <!-- Javascript answer -->
-                <p>Based on the survey you filled out <span class="emphasis">Javascript</span> is the best programming language for you!</p>
-            </div>
-            <div id="aPython" class="hidden">
-                <!-- Python answer -->
-                <p>Based on the survey you filled out <span class="emphasis">Python</span> is the best programming language for you!</p>
-            </div>
-            <div id="undetermined" class="hidden">
-                <p>Sorry try again when you know a little more about what you want.</p>
-            </div>
+        <div id="message" class="hidden">
+            <!--answer -->
+            <p>Based on the survey you filled out <span class="emphasis replace">_________</span> is the best programming language for you!</p>
         </div>
     </body>
 </html>
