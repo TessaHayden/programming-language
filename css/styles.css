@@ -20,13 +20,14 @@ form label {
     margin-bottom: .5%;
 }
 
-form input {
+form select {
     margin-bottom: 2%;
 }
 
 form button {
     display: block;
     margin: auto;
+
 }
 
 .emphasis {

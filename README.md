@@ -21,12 +21,6 @@ This site is designed to help beginners find the perfect programming language to
 - _Navigate to the top level of directory, index.html_
 - _Open index.html in your browser_
 
-#### Setup:
-
-- _Clone Repository to your desktop_
-- _Navigate to the top level of directory, index.html_
-- _Open index.html in your browser_
-
 #### Link to repository:
 
 https://github.com/TessaHayden/programming-language

@@ -17,37 +17,49 @@
             <h3>Please answer this quick survey to find the right language for you!</h3>
         </div>
         <div>
-            <form id="radio-form">
-                <label>
-                    <input type="radio" name="survey" value="puppies" checked>
-                    Do you like puppies?
-                </label>
-                <label>
-                    <input type="radio" name="survey" value="daffodils">
-                    Do you like daffodils?
-                </label>
-                <label>
-                    <input type="radio" name="survey" value="sneezes">
-                    Do you sneeze at night?
-                </label>
-                <label>
-                    <input type="radio" name="survey" value="hives">
-                    Do you ever get hives?
-                </label>
-                <label>
-                    <input type="radio" name="survey" value="muffins">
-                    Do you know the Muffin Man?
-                </label>
+            <form id="select-form">
+                <label for="puppies" name="puppies">Do you like puppies?</label>
+                <select id="puppies">
+                    <option value="">Please choose an option:</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="daffodils" name="daffodil">Do you like daffodils</label>
+                <select id="daffodils">
+                    <option value="">Please choose an option:</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="sneezes" name="sneezes">Do you sneeze at night?</label>
+                <select id="sneezes">
+                    <option value="">Please choose an option:</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="hives" name="hives">Do you get hives?</label>
+                <select id="hives">
+                    <option value="">Please choose an option:</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="muffins" name="muffins">Please choose an option:</label>
+                <select id="muffins">
+                    <option value="">Please choose an option:</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
 
-                <button type="submit">Submit to find out!</button>
+                <button type="submit">Submit</button>
             </form>
+
             <div>
                 <button type="button" class="hidden" id="reset">Reset Button</button>
             </div>
         </div>
+
         <div id="message" class="hidden">
             <!--answer -->
-            <p>Based on the survey you filled out <span class="emphasis replace">_________</span> is the best programming language for you!</p>
+            <p>Based on the survey you filled out <span id="replace" class="emphasis">_________</span> is the best programming language for you!</p>
         </div>
     </body>
 </html>
