@@ -42,7 +42,7 @@
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
-                <label for="muffins" name="muffins">Please choose an option:</label>
+                <label for="muffins" name="muffins">Do you know the Muffin Man?</label>
                 <select id="muffins">
                     <option value="">Please choose an option:</option>
                     <option value="yes">Yes</option>
@@ -58,8 +58,10 @@
         </div>
 
         <div id="message" class="hidden">
-            <!--answer -->
             <p>Based on the survey you filled out <span id="replace" class="emphasis">_________</span> is the best programming language for you!</p>
+        </div>
+        <div id="err-msg" class="hidden">
+            <p>Sorry, we are unable to determine your results based on your answers.</p>
         </div>
     </body>
 </html>
